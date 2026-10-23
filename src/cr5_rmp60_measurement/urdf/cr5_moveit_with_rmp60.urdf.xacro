@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="cr5_robot">
+  <xacro:arg name="initial_positions_file" default="initial_positions.yaml"/>
+  <xacro:arg name="tool_parent" default="Link6"/>
+  <xacro:arg name="tool_prefix" default="rmp60"/>
+  <xacro:arg name="tool_axis_sign" default="1"/>
+  <xacro:arg name="mount_xyz" default="0 0 0"/>
+  <xacro:arg name="mount_rpy" default="0 0 0"/>
+  <xacro:arg name="adapter_length" default="0.0494"/>
+  <xacro:arg name="adapter_radius" default="0.030"/>
+  <xacro:arg name="probe_body_length" default="0.076"/>
+  <xacro:arg name="probe_body_radius" default="0.0315"/>
+  <xacro:arg name="stylus_length" default="0.083870898"/>
+  <xacro:arg name="stylus_radius" default="0.0008"/>
+  <xacro:arg name="center_stem_length" default="0.0490"/>
+  <xacro:arg name="center_stem_radius" default="0.0035"/>
+  <xacro:arg name="stylus_ball_radius" default="0.001"/>
+  <xacro:arg name="x_pos_x" default="-0.021926126"/>
+  <xacro:arg name="x_pos_y" default="0.029921686"/>
+  <xacro:arg name="x_pos_z" default="0.174438871"/>
+  <xacro:arg name="x_neg_x" default="0.022126096"/>
+  <xacro:arg name="x_neg_y" default="-0.031316519"/>
+  <xacro:arg name="x_neg_z" default="0.173763882"/>
+  <xacro:arg name="y_pos_x" default="0.031888504"/>
+  <xacro:arg name="y_pos_y" default="0.022272196"/>
+  <xacro:arg name="y_pos_z" default="0.172149056"/>
+  <xacro:arg name="y_neg_x" default="-0.030650710"/>
+  <xacro:arg name="y_neg_y" default="-0.022242713"/>
+  <xacro:arg name="y_neg_z" default="0.174850003"/>
+
+  <xacro:include filename="$(find cr5_moveit)/config/cr5_robot.urdf.xacro"/>
+  <xacro:include filename="rmp60_probe_module.xacro"/>
+
+  <xacro:rmp60_probe_module
+    parent="$(arg tool_parent)"
+    prefix="$(arg tool_prefix)"
+    axis_sign="$(arg tool_axis_sign)"
+    mount_xyz="$(arg mount_xyz)"
+    mount_rpy="$(arg mount_rpy)"
+    adapter_length="$(arg adapter_length)"
+    adapter_radius="$(arg adapter_radius)"
+    probe_body_length="$(arg probe_body_length)"
+    probe_body_radius="$(arg probe_body_radius)"
+    stylus_length="$(arg stylus_length)"
+    stylus_radius="$(arg stylus_radius)"
+    center_stem_length="$(arg center_stem_length)"
+    center_stem_radius="$(arg center_stem_radius)"
+    stylus_ball_radius="$(arg stylus_ball_radius)"
+    x_pos_x="$(arg x_pos_x)"
+    x_pos_y="$(arg x_pos_y)"
+    x_pos_z="$(arg x_pos_z)"
+    x_neg_x="$(arg x_neg_x)"
+    x_neg_y="$(arg x_neg_y)"
+    x_neg_z="$(arg x_neg_z)"
+    y_pos_x="$(arg y_pos_x)"
+    y_pos_y="$(arg y_pos_y)"
+    y_pos_z="$(arg y_pos_z)"
+    y_neg_x="$(arg y_neg_x)"
+    y_neg_y="$(arg y_neg_y)"
+    y_neg_z="$(arg y_neg_z)"/>
+</robot>

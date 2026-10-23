@@ -1,0 +1,28 @@
+# Generated ROS workspace files
+build/
+install/
+log/
+compile_commands.json
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.cache/
+# Local experiment data, credentials and authoring outputs
+data/
+exports/
+.env
+.env.*
+.aws/
+.agents/
+.codex/
+.claude/
+.playwright-cli/
+mcporter.json
+
+# Measurement tables and research document exports
+*.csv
+*.jsonl
+*.docx
+*.xlsx
+*.pptx
+*.pdf

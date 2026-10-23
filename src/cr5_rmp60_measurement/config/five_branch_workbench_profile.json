@@ -1,0 +1,81 @@
+{
+  "schema_version": 3,
+  "profile_name": "CR5-RMP60 base-relative magnetic fixture prefill 2026-10-10",
+  "warning": "The robot pose is table-relative; the magnetic-base centre is expressed directly in base_link. Confirm all values before motion.",
+  "robot": {
+    "ip": "192.168.5.1",
+    "frame_id": "base_link",
+    "euler_sequence": "xyz",
+    "base_in_table_pose_mm_deg": [
+      400.0,
+      -120.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "workcell": {
+    "table": {
+      "size_xy_mm": [
+        1200.0,
+        900.0
+      ],
+      "collision_thickness_mm": 20.0
+    },
+    "magnetic_base": {
+      "center_base_mm": [
+        -401.9,
+        126.5,
+        35.0
+      ],
+      "size_xyz_mm": [
+        60.0,
+        60.0,
+        70.0
+      ]
+    },
+    "sphere_stem": {
+      "diameter_mm": 8.0,
+      "length_mm": 9.487
+    },
+    "standard_sphere": {
+      "diameter_mm": 20.0
+    }
+  },
+  "tool": {
+    "mount_xyz_mm": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mount_rxyz_deg": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "connector": {
+      "diameter_mm": 60.0,
+      "length_mm": 49.4
+    },
+    "probe_body": {
+      "diameter_mm": 63.0,
+      "length_mm": 76.0
+    },
+    "center_stem": {
+      "diameter_mm": 7.0,
+      "length_mm": 49.0
+    },
+    "ruby_ball_diameter_mm": 2.0,
+    "five_branch_geometry": "config/cross_probe_geometry.yaml"
+  },
+  "jog": {
+    "linear_step_mm": 5.0,
+    "angular_step_deg": 0.1,
+    "speed": 1,
+    "auto_retract_mm": 1.0,
+    "timeout_sec": 5.0,
+    "position_tolerance_mm": 0.08,
+    "orientation_tolerance_deg": 0.08
+  }
+}

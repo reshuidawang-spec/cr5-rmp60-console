@@ -1,0 +1,67 @@
+# CR5 + RMP60 cross-stylus geometry.
+#
+# Units:
+# - length fields are in millimetres unless the key suffix is `_m`.
+# - vectors are expressed in the RMP60/tool local frame.
+#
+# Current assumptions from the real five-way stylus observed on 2026-06-29:
+# - Adapter/flange effective axial length: 5 + 40 + 4.4 = 49.4 mm.
+# - The RMP60 body is followed by a white vertical centre support.
+# - The four side styli leave from the lower cross hub, not directly from the
+#   RMP60 body bottom; collision models must therefore treat them as short
+#   near-horizontal rods.
+# - Side and axial ruby balls are 2.0 mm diameter, so radius is 1.0 mm.
+# - Dimensions below are conservative modelling values for planning. Calibrated
+#   ball-centre offsets in the registry remain the accuracy source.
+
+tool_frame: rmp60_probe_body
+flange_adapter:
+  plate_thickness_mm: 5.0
+  main_body_length_mm: 40.0
+  rmp60_mount_step_mm: 4.4
+  effective_axial_length_mm: 49.4
+
+probe_body:
+  length_mm: 76.0
+  diameter_mm: 63.0
+
+derived_nominal:
+  flange_to_branch_origin_mm: 125.4
+  flange_to_cross_hub_mm: 174.4
+  flange_to_axial_ball_center_mm: 209.27089775384175
+
+stylus:
+  branch_center_distance_mm: 38.0
+  ball_diameter_mm: 2.0
+  ball_radius_mm: 1.0
+  rod_radius_mm: 0.6
+  side_rod_radius_mm: 0.6
+  side_rod_collision_radius_mm: 0.8
+  axial_rod_radius_mm: 0.75
+  axial_rod_collision_radius_mm: 0.9
+  center_stem_radius_mm: 3.0
+  center_stem_collision_radius_mm: 3.5
+  cross_hub_offset_from_branch_origin_mm: 49.0
+
+branches:
+  - name: z
+    frame: rmp60_tip_z
+    compatible_frame: rmp60_tip
+    direction: [0.0, 0.0, 1.0]
+    nominal_offset_mm: [0.0, 0.0, 83.87089775384175]
+  - name: x_pos
+    frame: rmp60_tip_x_pos
+    direction: [-0.548, 0.836, 0.0]
+    nominal_offset_mm: [-21.954, 29.898, 49.0]
+  - name: x_neg
+    frame: rmp60_tip_x_neg
+    direction: [0.577, -0.817, 0.0]
+    nominal_offset_mm: [22.107, -31.315, 49.0]
+  - name: y_pos
+    frame: rmp60_tip_y_pos
+    direction: [0.820, 0.573, 0.0]
+    nominal_offset_mm: [31.951, 22.347, 49.0]
+  - name: y_neg
+    frame: rmp60_tip_y_neg
+    direction: [-0.809, -0.588, 0.0]
+    nominal_offset_mm: [-30.643, -22.249, 49.0]

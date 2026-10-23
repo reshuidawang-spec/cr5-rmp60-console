@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "model_clearance_mm": 0.05,
+  "servo_period_sec": 0.03,
+  "max_joint_speed_deg_sec": 1.0,
+  "max_feedback_age_sec": 0.05,
+  "commissioning": {
+    "verified": false,
+    "robot_ip": "",
+    "installation_id": "",
+    "robot_model_sha256": "",
+    "controller_firmware": "",
+    "tracking_joint_error_deg": null,
+    "stop_joint_error_deg": null,
+    "geometry_error_mm": null,
+    "evidence": []
+  },
+  "max_probe_overtravel_mm": 0.5
+}

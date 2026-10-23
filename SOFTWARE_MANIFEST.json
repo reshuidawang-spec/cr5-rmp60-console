@@ -1,0 +1,1420 @@
+{
+  "schema_version": 1,
+  "release_date": "2026-10-23",
+  "scope": "software source, runtime models/config templates, dependencies, installation guides and synthetic tests only",
+  "verification": {
+    "offline_tests_passed": 143,
+    "ros_source_packages_built": 4,
+    "robot_motion_started": false,
+    "runtime_environment_check": "passed",
+    "fresh_native_fcl_build": "passed",
+    "csv_console_offline_construction": "passed"
+  },
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "e14bbebd9cf5c9402b6514a91cc60f0318b71a3d8f2af6ead6fad09da575533f",
+      "bytes": 363
+    },
+    {
+      "path": "README.md",
+      "sha256": "ebfabaca08679c4b6bdb6944b5a3cbac1167597c2fedafadb88d250dabf61d30",
+      "bytes": 2888
+    },
+    {
+      "path": "THIRD_PARTY.md",
+      "sha256": "d581934be4bd88e8e1c06973f102e652d4202e55250898d883e98bba23032c25",
+      "bytes": 496
+    },
+    {
+      "path": "install.sh",
+      "sha256": "6c98edc34ef69353979c1e426a216309dd146d0b22fb454b31f46487e255df35",
+      "bytes": 190
+    },
+    {
+      "path": "launch_calibration.sh",
+      "sha256": "eb15f3bc804a9d4d9e51cb5c94a829dd15c1564c6dea017dc72198d8581a8891",
+      "bytes": 291
+    },
+    {
+      "path": "launch_console.sh",
+      "sha256": "2469c60d36da9ffa594ffe3a6d1537bc579b953221b71f390e11f81fcdc9c9c0",
+      "bytes": 339
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/cr5_moveit/.setup_assistant",
+      "sha256": "06b76378a12dafc42b9a065377a5fbe3db68192395de8f52769f5592f5db4cc0",
+      "bytes": 497
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/cr5_moveit/CMakeLists.txt",
+      "sha256": "bee7293fc2df5f94313e794a08be2947210fe8bbc5fdcf130c466fa2e56ace45",
+      "bytes": 340
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/cr5_moveit/config/cr5_robot.ros2_control.xacro",
+      "sha256": "964d034514919b81400b3a4bd31b51fd2351f8d76dab4888c0322c509cc85c94",
+      "bytes": 2571
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/cr5_moveit/config/cr5_robot.srdf",
+      "sha256": "0d0e3745448c812d28d580bac10f1b7d2fcb7d634cb6510d44876decb761b963",
+      "bytes": 3241
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/cr5_moveit/config/cr5_robot.urdf.xacro",
+      "sha256": "6d22f91fd08683daf5e5720d605006821da93134dfaec86a6186cf44bcc67dc1",
+      "bytes": 503
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/cr5_moveit/config/initial_positions.yaml",
+      "sha256": "a1012e95d88ccd03b6bd39ec2e1631e9fa82bb6b89cfc449d9d0dc6e5c365b69",
+      "bytes": 160
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/cr5_moveit/config/joint_limits.yaml",
+      "sha256": "af61f238b18b88ab56f56c0035b48027f50e3f4b478097a0aad312a7baf8e3fe",
+      "bytes": 1345
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/cr5_moveit/config/kinematics.yaml",
+      "sha256": "45e25c2f5a25d28147da604b3bd3646b00c2069702e99e5ff257827ef5ce7d4a",
+      "bytes": 185
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/cr5_moveit/config/moveit.rviz",
+      "sha256": "c51d1d191f37440d5e0e292f955decaadc82dcd4005b79237f5176aee1c269da",
+      "bytes": 1917
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/cr5_moveit/config/moveit_controllers.yaml",
+      "sha256": "e08d7fe00abb7623de5e5297eecd73a23e249dd4e833f3ea2294b446563b2e6d",
+      "bytes": 693
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/cr5_moveit/config/ompl_planning.yaml",
+      "sha256": "b097be294f86e939e54ea86c55cbfb74d48dffcdefe650bfd503bfb624da3ccb",
+      "bytes": 1528
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/cr5_moveit/config/pilz_cartesian_limits.yaml",
+      "sha256": "fed80b213b77f13fb7b913d703609a66caa72ccb0617b41e83d3057e31749047",
+      "bytes": 133
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/cr5_moveit/config/ros2_controllers.yaml",
+      "sha256": "d7df2cff679ad0d2d898f38fab2a3bcf42ccdac06411d50a8ca8eaf1d62ffffe",
+      "bytes": 530
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/cr5_moveit/launch/demo.launch.py",
+      "sha256": "058f1a1b1717a41e74e6e8f73d55e69526e2f95fab12e1b25d083391e5efe196",
+      "bytes": 425
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/cr5_moveit/launch/dobot_moveit.launch.py",
+      "sha256": "47aa5aa3ce73a9e3bfcc6731cfde43b2f9623637320a952fb660f9251bc1c553",
+      "bytes": 4903
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/cr5_moveit/launch/move_group.launch.py",
+      "sha256": "3a3b64df4c7f04cf64bf4fb915b7e2ce79db7df9b4f8bf158eeee3510b9d90b2",
+      "bytes": 437
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/cr5_moveit/launch/moveit_gazebo.launch.py",
+      "sha256": "4bb5dcd7dec43b8cf4e39f1ee024133eed68e6b86b5c9a360426f77b2b4bcf24",
+      "bytes": 4015
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/cr5_moveit/launch/moveit_rviz.launch.py",
+      "sha256": "60470d7110f2bfeec8476232cfc191873e93a1bca3cdd4177fcc696467b654b6",
+      "bytes": 439
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/cr5_moveit/launch/rsp.launch.py",
+      "sha256": "218d2a791d6a53dd3840582a0188f0fddce308cf5ec4d8948c8f61c806351a59",
+      "bytes": 300
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/cr5_moveit/launch/setup_assistant.launch.py",
+      "sha256": "8036dacc7ea4fac9ff27dc7ade16ec02f0c0f8950a4f4a5136180575bf97025d",
+      "bytes": 324
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/cr5_moveit/launch/spawn_controllers.launch.py",
+      "sha256": "7e6ca969dccf9be41296d34e2ac4d630a36ff0c8b7f2030cdf19fbd0d6c9401c",
+      "bytes": 328
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/cr5_moveit/launch/static_virtual_joint_tfs.launch.py",
+      "sha256": "bf332b075968bb34f550343bcc389766e4a61a763739dd386697582635aa2e0a",
+      "bytes": 342
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/cr5_moveit/launch/warehouse_db.launch.py",
+      "sha256": "fa8e739c1535940aa2735359e2b78198f0991ae8a01217a4b78ca6d632b3ecdb",
+      "bytes": 318
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/cr5_moveit/package.xml",
+      "sha256": "23e99393ba519c77db39faeaa3d8b8b0de83200e75d249e85e7517acf1d8bfeb",
+      "bytes": 2200
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/CMakeLists.txt",
+      "sha256": "e8f189ba1d5b249551d9ee862f9587672eabd84983af10b334db17e769130ccf",
+      "bytes": 1767
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/config/param.json",
+      "sha256": "b43e88cb8965712c543c608e532dcf69e1ad1b8d6b1d33f57bcdaae183587fca",
+      "bytes": 465
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/dobot_bringup/command.h",
+      "sha256": "f087a55fa3c799a99cddd30a7ef4c97ae55fa8a67a92bd3db3a0092867e6c8d0",
+      "bytes": 8773
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/dobot_bringup/cr_robot_ros2.h",
+      "sha256": "57a1309608e6104f99f5c98415d0dc6a9736a40e7c55ccf4faa3c9ac198dc3be",
+      "bytes": 29176
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/dobot_bringup/parseTool.h",
+      "sha256": "857d7cea7ac48e165134a44115ba7a718b9ca0d0c8ce155015edeb787e26026b",
+      "bytes": 15797
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/dobot_bringup/tcp_socket.h",
+      "sha256": "eaa26e85438338784a13a484d6fa4714735dec820190d361a88eae7fd76bacf7",
+      "bytes": 1613
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/adl_serializer.hpp",
+      "sha256": "0c4ce295a3f4092cff092901c340c961b10c48ec8d555110fe3df9f619740a19",
+      "bytes": 2279
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/byte_container_with_subtype.hpp",
+      "sha256": "b56733d3a5b84004f4c7da8ac29ff030509d6a013eeb090541bfcdc46c1a5dc0",
+      "bytes": 3533
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/detail/abi_macros.hpp",
+      "sha256": "702af5c60305125d8e5a4c813d271882b93bb2ba43cdfe91ee4edcef3fbeeb71",
+      "bytes": 3807
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/detail/conversions/from_json.hpp",
+      "sha256": "8cad2ff4a90591110a5cc6134eef25e5a16c33f97b531e1576ed551319d16896",
+      "bytes": 18880
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/detail/conversions/to_chars.hpp",
+      "sha256": "1710dc29a710e8a2121872aefcdd5667c88d3b41b3f863e793a6265106ec237c",
+      "bytes": 38562
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/detail/conversions/to_json.hpp",
+      "sha256": "8d725eca0c56c3f36e64f2d98b701e900d381c6155d0ca98f75ee23173933aef",
+      "bytes": 16274
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/detail/exceptions.hpp",
+      "sha256": "873acb7249f09072d0dea72d9ea2f4e8dc2010417efafbf10c5e5e555f71057d",
+      "bytes": 9267
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/detail/hash.hpp",
+      "sha256": "54f7dd4f4d6cc7bd4c09fec7bda7e47992ee5799bf235104384ee70108023cff",
+      "bytes": 4016
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/detail/input/binary_reader.hpp",
+      "sha256": "7650471bd5ce35f0e6bee1ef248dfb72e37ae3f78eadfa3be1bdfab32e2b1614",
+      "bytes": 103191
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/detail/input/input_adapters.hpp",
+      "sha256": "777c89d706b8273228aa4005b3cdf78ed2b24fd69fbcb2966e8fe7d1a98f7a95",
+      "bytes": 17369
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/detail/input/json_sax.hpp",
+      "sha256": "890300d5084a9810f6be6b361c4e4f5a08847bce434a6b0593ee9a1c4539d3c7",
+      "bytes": 21420
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/detail/input/lexer.hpp",
+      "sha256": "64fcb577cbb7aedda33e3eed79133f12aee5178cf369f886ea2ec8b7a614d29a",
+      "bytes": 54586
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/detail/input/parser.hpp",
+      "sha256": "fd687a688fc68835ee1337f4e1e7e935bea6cd17dffabb43399628a69424d669",
+      "bytes": 18722
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/detail/input/position_t.hpp",
+      "sha256": "9007ed8be12f1b0d001c292c1525fdeb1418bed8cd63bf8a00b118574f5bd5d1",
+      "bytes": 958
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/detail/iterators/internal_iterator.hpp",
+      "sha256": "2414d89c20b4eb1278672a21b0f09858c4861ffe878432ec942e23e4d277479a",
+      "bytes": 1071
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/detail/iterators/iter_impl.hpp",
+      "sha256": "68d4b911bfdef6dfb0d14f3c6c58cc7bb1a15f7464dd784ebeb8f753991074b2",
+      "bytes": 24046
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/detail/iterators/iteration_proxy.hpp",
+      "sha256": "e710a112d781fee6696b7e3fc3adf255024b567c6880ec142de7479701308c5b",
+      "bytes": 8238
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/detail/iterators/iterator_traits.hpp",
+      "sha256": "78a1c32b2bad6782f97063cf642a6dc02588960b9420c1924ca5ef76fb8df9d8",
+      "bytes": 1757
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/detail/iterators/json_reverse_iterator.hpp",
+      "sha256": "3872b8f61110ff09a77c3a3dca852c0fee9defcaab5b778dc990a253883a5329",
+      "bytes": 3861
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/detail/iterators/primitive_iterator.hpp",
+      "sha256": "274ba54c5c2b2cd8e7c1e635392b09e73fd65d4183571f821ad149b3954ed818",
+      "bytes": 3227
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/detail/json_custom_base_class.hpp",
+      "sha256": "bd8766af0922ce350f00da817c5544b009bd3dbe701d6afd8e5809cedd6e6405",
+      "bytes": 883
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/detail/json_pointer.hpp",
+      "sha256": "89e228596dccae2f4d0f45cfd40097ad29ef2670e8bf461b1a7ee823d5a03834",
+      "bytes": 37143
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/detail/json_ref.hpp",
+      "sha256": "ef04660db0236f2f3341bd36de00cbc3f494018278800294be82f85e1fcc4b7c",
+      "bytes": 1811
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/detail/macro_scope.hpp",
+      "sha256": "1f56f0084c9355db640cea441bfdd525aeb61750d7d2b018e3dcdba218fd0d62",
+      "bytes": 43171
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/detail/macro_unscope.hpp",
+      "sha256": "e9f18bb2838b6c68a68ca5f1880d736cf4793d49b0ae1fcfb95a225fd0e15782",
+      "bytes": 1252
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/detail/meta/call_std/begin.hpp",
+      "sha256": "f79ecf122600e2e64f344dd95277910816206e37a80bed18737d22f281dbb465",
+      "bytes": 453
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/detail/meta/call_std/end.hpp",
+      "sha256": "f0d1493594068a73102b52c47f48d3443ea589afbcaaa2672b0e71499f61d696",
+      "bytes": 451
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/detail/meta/cpp_future.hpp",
+      "sha256": "519285d9ceca3d6d3afa0c647c71f8790b91179da66a08b68a9f73a8218016f3",
+      "bytes": 5178
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/detail/meta/detected.hpp",
+      "sha256": "01963ca48427b32286a4bda3741c0817648af65eef673fe7cc9fc9d94cf343a8",
+      "bytes": 2109
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/detail/meta/identity_tag.hpp",
+      "sha256": "9a95aaad68fe15b01570b4f9efaebd1ed2e5ad703767f4b93fc2cd855142199c",
+      "bytes": 526
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/detail/meta/is_sax.hpp",
+      "sha256": "876aaf9f4ccbed679a9340cf51b3dbe38eaf0b18122e0affe0c5e711a2f73533",
+      "bytes": 6960
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/detail/meta/std_fs.hpp",
+      "sha256": "68e8e979cca53bd97bc2e85b9e8a78066b5e791a951b0c73290cd7e5c740bc6a",
+      "bytes": 766
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/detail/meta/type_traits.hpp",
+      "sha256": "62efecb6a65d54ca44fa9210f4e1a416b546e4ded379c7b156cea2cc5942dfb3",
+      "bytes": 28096
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/detail/meta/void_t.hpp",
+      "sha256": "30cf458ad751b37097da34c3e28d9e387bbb37fab29d180984baba4e67d3a831",
+      "bytes": 597
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/detail/output/binary_writer.hpp",
+      "sha256": "fa372506e0779ac7e989c5dcd57b065eb741abc260ededb7ed9fcd848cc6f6ad",
+      "bytes": 71152
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/detail/output/output_adapters.hpp",
+      "sha256": "fec93f451953874aad7a30c79b921cd0c4ade1698e36e964bfe89f1a4a6a3c0f",
+      "bytes": 4067
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/detail/output/serializer.hpp",
+      "sha256": "ede7f1d89e8ba0b2744b5cadd60e99f2e6012abccf1c04aab7356c94a2448fcb",
+      "bytes": 40163
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/detail/string_concat.hpp",
+      "sha256": "9cc995f50f574dab3da7e98aae81ac50c3b0c2ca8eb29f95d2f7172f4865b273",
+      "bytes": 5951
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/detail/string_escape.hpp",
+      "sha256": "16899a2c01c9aee2cd0af5b9ede0d3f579af00b58303197e2692f756310317c9",
+      "bytes": 2168
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/detail/value_t.hpp",
+      "sha256": "f16e2a05c4fdfbe22fc2cee90f7adc0e6ca2c5345348fa1f8c855a8e04f263b6",
+      "bytes": 4326
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/json.hpp",
+      "sha256": "7c2c43bb0e13706cda9130928ef009e3c4f82b3a888b4f7a5743057cbad1a4a0",
+      "bytes": 198618
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/json_fwd.hpp",
+      "sha256": "7f50d7790bcfc96394a6f1a1e6635d4b2c8e08e48081ea2e9129df071cb871ef",
+      "bytes": 2541
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/ordered_map.hpp",
+      "sha256": "117612ea3fca3a4fb6ea2e5b529984c232a4c6deab312a7c7edfe11ff8451534",
+      "bytes": 11692
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/thirdparty/hedley/hedley.hpp",
+      "sha256": "6c5cdf981e43776f4cd320dc7476309efa7332f457288c4f33051b7fa4f7611d",
+      "bytes": 86068
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/include/nlohmann/thirdparty/hedley/hedley_undef.hpp",
+      "sha256": "2e5aff1a15cbfd8786a2776d0ec0e38e14d2ceadeea229bce5c583bafc26803c",
+      "bytes": 5500
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/launch/dobot_bringup_ros2.launch.py",
+      "sha256": "d4e639f5fa6f75a9e00f28e25c935c552cecc395a885ea51c74e05e7efe32694",
+      "bytes": 1659
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/package.xml",
+      "sha256": "5b588cadf20a3f6d7a5a2c99457b01d8592b35edf8185933cc08949fcd24cd49",
+      "bytes": 779
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/src/command.cpp",
+      "sha256": "c9279cb2997f90eab9ade8c59ae92ac89846c245f45b50196d3c0968b38db481",
+      "bytes": 8975
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/src/cr_robot_ros2.cpp",
+      "sha256": "6edebf39c63989001a3d6c7e748d2d7b9c2370f5b7e05d894390766f01d7bd47",
+      "bytes": 67021
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/src/main.cpp",
+      "sha256": "c5c88241a86c116dabaac4ea4eac464a4398e95580aa30667b1f50b42d2a951d",
+      "bytes": 2932
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/src/parseTool.cpp",
+      "sha256": "ea1e734c8837a546ca394ac66a16a074e9b7ad5e61aa6d1ae399d402b750b653",
+      "bytes": 36261
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_bringup_v4/src/tcp_socket.cpp",
+      "sha256": "55d50e0c45bcb59338dd95c8567b5b2c849e3a7d1836c89ceec1c57117d09aae",
+      "bytes": 3380
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/CMakeLists.txt",
+      "sha256": "e0537251e3bec5c534215f02a04d0a63e6e934a964c5a75e753b062de231a4df",
+      "bytes": 3581
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/msg/RobotStatus.msg",
+      "sha256": "1ec166dc668196f7f34f2cb41726c021019be19328d434c90a5ba85015998bba",
+      "bytes": 32
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/msg/ToolVectorActual.msg",
+      "sha256": "efea2cfebe14ce3bf673ca0b233d4c510f79513e6caabcbe6d17f4d84c1ed917",
+      "bytes": 62
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/package.xml",
+      "sha256": "5d44aa0ceed1f6ff948090bdc971d56a3e7f1cc85d85ee275f636c712c28197c",
+      "bytes": 812
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/AI.srv",
+      "sha256": "ead0d0923bde22f1929e5026fa5369a359917bae269f0bf0ce18be1f515bf23a",
+      "bytes": 25
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/AO.srv",
+      "sha256": "1d269a1914ea70b062cb407d4bf49645af186ea0281276d2c3dfc2e4d624c9a5",
+      "bytes": 74
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/AOInstant.srv",
+      "sha256": "1d269a1914ea70b062cb407d4bf49645af186ea0281276d2c3dfc2e4d624c9a5",
+      "bytes": 74
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/AccJ.srv",
+      "sha256": "4f20a31fe4d954c9599d30d331fd5db7f395eb0603a53d0f12018b115c84b710",
+      "bytes": 37
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/AccL.srv",
+      "sha256": "4f20a31fe4d954c9599d30d331fd5db7f395eb0603a53d0f12018b115c84b710",
+      "bytes": 37
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/Arc.srv",
+      "sha256": "03db06ac5eca73d53a802e9740d365afd7a09a8d514b863a88340558536a4c11",
+      "bytes": 171
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/BrakeControl.srv",
+      "sha256": "f9ee0a99612ae5d81e6164e17d370b0e45bb004de8b30ba9d20376fb28b3efae",
+      "bytes": 39
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/CP.srv",
+      "sha256": "4f20a31fe4d954c9599d30d331fd5db7f395eb0603a53d0f12018b115c84b710",
+      "bytes": 37
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/CalcTool.srv",
+      "sha256": "49568bfbacff884a1db9da9370ed080195dbf893698e76cfaf315f4b7b87ae3b",
+      "bytes": 54
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/CalcUser.srv",
+      "sha256": "8eb8a4452fbd1f3e58413d02ca57606f17e04a7cd41a3b76e3162a0959d05fa4",
+      "bytes": 55
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/Circle.srv",
+      "sha256": "07ba48f81a08dfc803f69ab1fbcd2586db45c1b387a05fc7611ef3fc776d3000",
+      "bytes": 182
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/ClearError.srv",
+      "sha256": "a1511693d9b57b47a7663a0e03c4bef87629d6af4869e6c067657118b8297371",
+      "bytes": 13
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/Continue.srv",
+      "sha256": "a1511693d9b57b47a7663a0e03c4bef87629d6af4869e6c067657118b8297371",
+      "bytes": 13
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/DI.srv",
+      "sha256": "6f86a242b6942a2a1a3b50a59c3547a95c2c2bfa01afe5edbb91001527ec71e4",
+      "bytes": 45
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/DIGroup.srv",
+      "sha256": "3390338fdbc59a09797c1f34428f861370c1aefb059b0b36a4bd2791013907f4",
+      "bytes": 46
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/DO.srv",
+      "sha256": "2311b2905316e6e591a22865eca8ef1a931205da6b191cd8a94ce215af827824",
+      "bytes": 49
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/DOGroup.srv",
+      "sha256": "02f35d3f23f6ab7e7cce305eedfec4203fdf4de639341abe3030dee7e382f3e4",
+      "bytes": 26
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/DOInstant.srv",
+      "sha256": "ded05438747cc08aa14fd5c148b663a4976724c50bea15a0a29b32aa2ec85e09",
+      "bytes": 38
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/DisableRobot.srv",
+      "sha256": "7cece5d3b3556d7f7d4cd8867a628bbbf118fb48c1a16069291debc53d6598a4",
+      "bytes": 33
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/DragSensivity.srv",
+      "sha256": "9307a52400ee3a21f20b1fdcfc56090cc5bd2680d4ab8e6c210696bd915edef6",
+      "bytes": 37
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/EmergencyStop.srv",
+      "sha256": "9ac2aa5fe5a9da66f3ca2c2a18284f17a2aa75639e815f983fae3cfd81e240cc",
+      "bytes": 25
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/EnableRobot.srv",
+      "sha256": "a1511693d9b57b47a7663a0e03c4bef87629d6af4869e6c067657118b8297371",
+      "bytes": 13
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/EnableSafeSkin.srv",
+      "sha256": "5f4398ca062184c860aaaaf4e1268df78aa48a573284ebb3d165ae52e5b6d0c5",
+      "bytes": 26
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/GetAO.srv",
+      "sha256": "6f86a242b6942a2a1a3b50a59c3547a95c2c2bfa01afe5edbb91001527ec71e4",
+      "bytes": 45
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/GetAngle.srv",
+      "sha256": "7cece5d3b3556d7f7d4cd8867a628bbbf118fb48c1a16069291debc53d6598a4",
+      "bytes": 33
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/GetCoils.srv",
+      "sha256": "baa1df95e3643f1c131cc1a059c3c5720580c89419c2b643dfdd0d712296c3a4",
+      "bytes": 68
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/GetCurrentCommandId.srv",
+      "sha256": "7cece5d3b3556d7f7d4cd8867a628bbbf118fb48c1a16069291debc53d6598a4",
+      "bytes": 33
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/GetDO.srv",
+      "sha256": "6f86a242b6942a2a1a3b50a59c3547a95c2c2bfa01afe5edbb91001527ec71e4",
+      "bytes": 45
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/GetDOGroup.srv",
+      "sha256": "52a0ff938c159908b193dd32f03b0b646bbe23bbe146f389efc448db89265a61",
+      "bytes": 53
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/GetErrorID.srv",
+      "sha256": "7cece5d3b3556d7f7d4cd8867a628bbbf118fb48c1a16069291debc53d6598a4",
+      "bytes": 33
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/GetHoldRegs.srv",
+      "sha256": "e21956edbebca4651fffbea7c9f39641aafb928b98ac83577df475be19e6b211",
+      "bytes": 87
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/GetInBits.srv",
+      "sha256": "baa1df95e3643f1c131cc1a059c3c5720580c89419c2b643dfdd0d712296c3a4",
+      "bytes": 68
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/GetInRegs.srv",
+      "sha256": "787665c48e74fe7e608a04f674c6855dc45d2cbec3f433965c42e508d99d645c",
+      "bytes": 91
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/GetInputBool.srv",
+      "sha256": "229076f0b0d01e1c6fd1578281518cab70b31bdd94880e078fecfdbcad869e55",
+      "bytes": 47
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/GetInputFloat.srv",
+      "sha256": "229076f0b0d01e1c6fd1578281518cab70b31bdd94880e078fecfdbcad869e55",
+      "bytes": 47
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/GetInputInt.srv",
+      "sha256": "229076f0b0d01e1c6fd1578281518cab70b31bdd94880e078fecfdbcad869e55",
+      "bytes": 47
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/GetOutputBool.srv",
+      "sha256": "229076f0b0d01e1c6fd1578281518cab70b31bdd94880e078fecfdbcad869e55",
+      "bytes": 47
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/GetOutputFloat.srv",
+      "sha256": "229076f0b0d01e1c6fd1578281518cab70b31bdd94880e078fecfdbcad869e55",
+      "bytes": 47
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/GetOutputInt.srv",
+      "sha256": "229076f0b0d01e1c6fd1578281518cab70b31bdd94880e078fecfdbcad869e55",
+      "bytes": 47
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/GetPose.srv",
+      "sha256": "2b52b27c9b39b2045d157bf5755d998f951025140d55b9d11139139b7a28e0b6",
+      "bytes": 55
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/GetStartPose.srv",
+      "sha256": "00c39120d7b2129e61a3290b0e085a7a104acde437c6bda7d008471a677c7db8",
+      "bytes": 51
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/InverseKin.srv",
+      "sha256": "e14c9579039dda6aa48e0724964b06b2fd284ffafc6bee9e764c0efc7ca90431",
+      "bytes": 165
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/InverseSolution.srv",
+      "sha256": "0dc6b38298c3f3f6ddceb003174b3bd4cbcf09d6bdbf94d886386a48fbb9a84b",
+      "bytes": 30
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/ModbusClose.srv",
+      "sha256": "ead0d0923bde22f1929e5026fa5369a359917bae269f0bf0ce18be1f515bf23a",
+      "bytes": 25
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/ModbusCreate.srv",
+      "sha256": "c0bb9923d4520ec3091b12b85cd248761f76da3f09cde62d48fec86308bbb888",
+      "bytes": 96
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/ModbusRTUCreate.srv",
+      "sha256": "8602c12aad679685964f0e8fb1b328c724273e55463d3d2f2039c63af57d4769",
+      "bytes": 113
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/MovJ.srv",
+      "sha256": "fb0e41c70f4b7905dac34744e14cd52d6d4f15652a3888b232157edc1a3d5129",
+      "bytes": 124
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/MovJIO.srv",
+      "sha256": "3b5e6563cad1730b8855346d83e982975b98c491e526d8608fb1c9ed0c8d8ae2",
+      "bytes": 118
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/MovL.srv",
+      "sha256": "fb0e41c70f4b7905dac34744e14cd52d6d4f15652a3888b232157edc1a3d5129",
+      "bytes": 124
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/MovLIO.srv",
+      "sha256": "3b5e6563cad1730b8855346d83e982975b98c491e526d8608fb1c9ed0c8d8ae2",
+      "bytes": 118
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/MoveJog.srv",
+      "sha256": "46631777536969e5ded2fbaa602ac131d1351d8b9c09e4b55bf5a375e25ac375",
+      "bytes": 49
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/Pause.srv",
+      "sha256": "229584408cca7150f8d1cb7dd0931726dc74de35952aa764ff8d0619cae15970",
+      "bytes": 14
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/PositiveKin.srv",
+      "sha256": "1ee5356509a49ea0d48e29a6a44d976093a9498241e3d251a5104994938c219a",
+      "bytes": 136
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/PowerOn.srv",
+      "sha256": "a1511693d9b57b47a7663a0e03c4bef87629d6af4869e6c067657118b8297371",
+      "bytes": 13
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/RelJointMovJ.srv",
+      "sha256": "9b6992a4aff8eaeb96d12093394eff4b3593a3e75befb48a0afaed85e47e3c54",
+      "bytes": 95
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/RelMovJTool.srv",
+      "sha256": "9b6992a4aff8eaeb96d12093394eff4b3593a3e75befb48a0afaed85e47e3c54",
+      "bytes": 95
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/RelMovJUser.srv",
+      "sha256": "9b6992a4aff8eaeb96d12093394eff4b3593a3e75befb48a0afaed85e47e3c54",
+      "bytes": 95
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/RelMovLTool.srv",
+      "sha256": "9b6992a4aff8eaeb96d12093394eff4b3593a3e75befb48a0afaed85e47e3c54",
+      "bytes": 95
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/RelMovLUser.srv",
+      "sha256": "9b6992a4aff8eaeb96d12093394eff4b3593a3e75befb48a0afaed85e47e3c54",
+      "bytes": 95
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/RobotMode.srv",
+      "sha256": "7cece5d3b3556d7f7d4cd8867a628bbbf118fb48c1a16069291debc53d6598a4",
+      "bytes": 33
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/RunScript.srv",
+      "sha256": "1186eaab87306ae9001ade14c191c404a548fa27b4cae6e2988dc04f2bb9b1ff",
+      "bytes": 33
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/ServoJ.srv",
+      "sha256": "9b6992a4aff8eaeb96d12093394eff4b3593a3e75befb48a0afaed85e47e3c54",
+      "bytes": 95
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/ServoP.srv",
+      "sha256": "9b6992a4aff8eaeb96d12093394eff4b3593a3e75befb48a0afaed85e47e3c54",
+      "bytes": 95
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/SetBackDistance.srv",
+      "sha256": "02e1a1a796cbd95aaf8878d9bed6a5780cafcb560b63cbd9a9905d0eae1fdbc3",
+      "bytes": 30
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/SetCoils.srv",
+      "sha256": "48c2ee76cb48acd8b9029b2d3a55dd8a68db6a83b2f395e25864c823cc833afa",
+      "bytes": 74
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/SetCollisionLevel.srv",
+      "sha256": "27ae0e0a9a1ce83429647f8c1d9b6b2992c2ab54c308c5e286d8e431b049ad79",
+      "bytes": 25
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/SetHoldRegs.srv",
+      "sha256": "79ae54bd84440a5dada2d0f50002e6c3b9836644a32f6f0a896bb79bca9ac8b2",
+      "bytes": 92
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/SetOutputBool.srv",
+      "sha256": "c638227bd06238ca69145ee7fe1cc8d34c47fd4388dd24426017cbb7ea279bbf",
+      "bytes": 39
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/SetOutputFloat.srv",
+      "sha256": "8de6326a303983a47b8006f57a7790d387234510c9de76a20dc5f54e4d39fc46",
+      "bytes": 41
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/SetOutputInt.srv",
+      "sha256": "c638227bd06238ca69145ee7fe1cc8d34c47fd4388dd24426017cbb7ea279bbf",
+      "bytes": 39
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/SetPayload.srv",
+      "sha256": "8c364eee3d61bc00a1b3179d0c81d8655c24a5aea6ba01e74bdb155f8b70627e",
+      "bytes": 57
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/SetPostCollisionMode.srv",
+      "sha256": "7838512d90223c4e10955dee1a1b22d52f1a254ac3a9c157597beda72d0196e6",
+      "bytes": 24
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/SetSafeSkin.srv",
+      "sha256": "f1359d4a02b230df980d8ff29a461b45b1c0fd3dc528b0b393a6f63a1340464f",
+      "bytes": 37
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/SetSafeWallEnable.srv",
+      "sha256": "9307a52400ee3a21f20b1fdcfc56090cc5bd2680d4ab8e6c210696bd915edef6",
+      "bytes": 37
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/SetTool.srv",
+      "sha256": "574de0f4c8f8b1f5ce30f3b7d044a0c427c1d055f2a6be66828fd37b6f045247",
+      "bytes": 38
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/SetTool485.srv",
+      "sha256": "4b1e92876d5385125e35bab4d05aa389e3615089a0d015025a1aa3442145f321",
+      "bytes": 71
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/SetToolMode.srv",
+      "sha256": "85a497adc59ff51e46ce24081457516ad0071f0fe9feb38981803604ce6ddfeb",
+      "bytes": 35
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/SetToolPower.srv",
+      "sha256": "5f4398ca062184c860aaaaf4e1268df78aa48a573284ebb3d165ae52e5b6d0c5",
+      "bytes": 26
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/SetUser.srv",
+      "sha256": "574de0f4c8f8b1f5ce30f3b7d044a0c427c1d055f2a6be66828fd37b6f045247",
+      "bytes": 38
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/SpeedFactor.srv",
+      "sha256": "f5655cbfc3f5b30b3004702f2cacde1f14c8763e243133b7a4fdea1209253476",
+      "bytes": 25
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/StartDrag.srv",
+      "sha256": "a1511693d9b57b47a7663a0e03c4bef87629d6af4869e6c067657118b8297371",
+      "bytes": 13
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/StartPath.srv",
+      "sha256": "1f84ad5519a1b23940769e96d659b9b4a864f90fe97caab52e4e5297b49a2a68",
+      "bytes": 52
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/Stop.srv",
+      "sha256": "a1511693d9b57b47a7663a0e03c4bef87629d6af4869e6c067657118b8297371",
+      "bytes": 13
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/StopDrag.srv",
+      "sha256": "a1511693d9b57b47a7663a0e03c4bef87629d6af4869e6c067657118b8297371",
+      "bytes": 13
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/StopMoveJog.srv",
+      "sha256": "a1511693d9b57b47a7663a0e03c4bef87629d6af4869e6c067657118b8297371",
+      "bytes": 13
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/TcpDashboard.srv",
+      "sha256": "f71eb9a763d355d7e99b6a19dd5b4dda3be9e9a4e438b7e2be67ff6e961f643c",
+      "bytes": 32
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/Tool.srv",
+      "sha256": "ead0d0923bde22f1929e5026fa5369a359917bae269f0bf0ce18be1f515bf23a",
+      "bytes": 25
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/ToolAI.srv",
+      "sha256": "ead0d0923bde22f1929e5026fa5369a359917bae269f0bf0ce18be1f515bf23a",
+      "bytes": 25
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/ToolDI.srv",
+      "sha256": "ead0d0923bde22f1929e5026fa5369a359917bae269f0bf0ce18be1f515bf23a",
+      "bytes": 25
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/ToolDO.srv",
+      "sha256": "ded05438747cc08aa14fd5c148b663a4976724c50bea15a0a29b32aa2ec85e09",
+      "bytes": 38
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/ToolDOInstant.srv",
+      "sha256": "ded05438747cc08aa14fd5c148b663a4976724c50bea15a0a29b32aa2ec85e09",
+      "bytes": 38
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/User.srv",
+      "sha256": "ead0d0923bde22f1929e5026fa5369a359917bae269f0bf0ce18be1f515bf23a",
+      "bytes": 25
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/VelJ.srv",
+      "sha256": "5ae4a385253fa8827925f90f476cf00dacf2573428b11d304ddf212ae2e4b22a",
+      "bytes": 21
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_msgs_v4/srv/VelL.srv",
+      "sha256": "5ae4a385253fa8827925f90f476cf00dacf2573428b11d304ddf212ae2e4b22a",
+      "bytes": 21
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_rviz/CMakeLists.txt",
+      "sha256": "b524481a48a5a659c93d624a8baa4418b960258bf73e46fcb48ce6dff258f8b6",
+      "bytes": 988
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_rviz/launch/dobot_rviz.launch.py",
+      "sha256": "820335888025e12e4e5d1c23f576c63d4040602ef80be7cb73f2e63a8f979487",
+      "bytes": 2456
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_rviz/meshes/cr5/Link1.dae",
+      "sha256": "0a3c52a9d61fdae54fed9821337c99f22c662a60857a5afc7eb53569b8b8b5b1",
+      "bytes": 514627
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_rviz/meshes/cr5/Link2.dae",
+      "sha256": "9563f823505fd8216297311b71b0e961a538a5c59788a4d3be3762a3aeab34a9",
+      "bytes": 1321800
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_rviz/meshes/cr5/Link3.dae",
+      "sha256": "971f87cb8400694a7905970f6749a7a3ea66ae74d0a2748112f9b371b04cad7a",
+      "bytes": 939487
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_rviz/meshes/cr5/Link4.dae",
+      "sha256": "3973ae78e62d9ac0f0e2c3bb1de6912845b871d1a939e7fd84866525bfdb4b71",
+      "bytes": 482931
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_rviz/meshes/cr5/Link5.dae",
+      "sha256": "09aafe941c927dfe7761e82d45bb2272e0fa51cfcc6d1b5785d6b9ce76ee4481",
+      "bytes": 675783
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_rviz/meshes/cr5/Link6.dae",
+      "sha256": "785a7b87233edce716d2c10921a8ed4a6dbaaeb8ea5971e1659495c741fbe519",
+      "bytes": 544247
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_rviz/meshes/cr5/base_link.dae",
+      "sha256": "4880c249e784d5dbf666166cf983924ef729d061d3a03cdd239f1a3c467484fa",
+      "bytes": 206130
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_rviz/package.xml",
+      "sha256": "e1725fc71135c5ae492f1b9762ae225710446cd94ba1b129d68a52c181b0773f",
+      "bytes": 809
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_rviz/rviz/urdf.rviz",
+      "sha256": "e14f3b53d5b15b8c83bf410c9c0ac818e69460cee16289dc1e4adf6bbe7bd444",
+      "bytes": 863
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_rviz/urdf/cr10_robot.urdf",
+      "sha256": "0d4173f1501b13c758ebd38860f54dd80463d76223b9b49b43eb09384934951f",
+      "bytes": 8731
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_rviz/urdf/cr12_robot.urdf",
+      "sha256": "163d6bc2dbc2ce38917ef4685ca6411d171ded15708d0d3e30fe18bb1ded4be6",
+      "bytes": 9830
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_rviz/urdf/cr16_robot.urdf",
+      "sha256": "245312aac8d3e954fca3f87b39f51147dfa1dbf78a50d3ede62097559a123281",
+      "bytes": 8737
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_rviz/urdf/cr20_robot.urdf",
+      "sha256": "49f3da9669ce42abb1664f4551a2b9f846e01d7c5fb73c6dbeb5e9bf63613b2f",
+      "bytes": 9116
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_rviz/urdf/cr30h_robot.urdf",
+      "sha256": "4ac157be04fc77635ce3674078d7f4f2aa6e900d75cd1ce76f4bf469d208fbd1",
+      "bytes": 8743
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_rviz/urdf/cr3_robot.urdf",
+      "sha256": "06362e9190e672583be6b10b09f4ae5a814e39b375307df1a574534fe0616ec6",
+      "bytes": 8934
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_rviz/urdf/cr5_robot.urdf",
+      "sha256": "f4312d79358bd8f691066a5fd7a50ac17a2d7a1eacffdff372f7778a454cc9b2",
+      "bytes": 7042
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_rviz/urdf/cr7_robot.urdf",
+      "sha256": "8f6ac8ed1fb6d72e39924673bf24b65ebfa4ab7dfc2486b77f746fcf66b36299",
+      "bytes": 9827
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_rviz/urdf/me6_robot.urdf",
+      "sha256": "84348e829023ab8d033ef6adfd1f1f396ef01af395f7cce0f1c273e776d8316b",
+      "bytes": 9492
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_rviz/urdf/nova2_robot.urdf",
+      "sha256": "bd2343079c8d8e19d0339ad4596ef0abc8a1df701aa7834fa06f6ce2883c6a32",
+      "bytes": 9415
+    },
+    {
+      "path": "src/DOBOT_6Axis_ROS2_V4/dobot_rviz/urdf/nova5_robot.urdf",
+      "sha256": "db2e05720c3dd06dc6cf676b36ffb7955ea5fea685977c341d8e7272f90eac46",
+      "bytes": 9533
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/config/cross_probe_geometry.yaml",
+      "sha256": "47abae7fda64a32f60953d8c0acbd78717766319b5b409be17c142853d09158b",
+      "bytes": 2153
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/config/five_branch_workbench_profile.json",
+      "sha256": "3faacc59334c4562f3f5c6a2065b714c602117be1ea24174c7b13716c60058f5",
+      "bytes": 1606
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/config/moveit/cr5_rmp60.srdf",
+      "sha256": "cacae160771d54044fbb0c836e4b10bd56aa73913f4c67c04019d9b72aa680f2",
+      "bytes": 3013
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/config/moveit/rmp60_initial_positions.yaml",
+      "sha256": "186e5a82d07ecb56a5cf454bcb8d4ff6cabfae9e3ff7b157f1b5ef2e1236096e",
+      "bytes": 313
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/config/rviz/cr5_rmp60_model.rviz",
+      "sha256": "812ec44b45928210cf0e46d3f510e3b5f539fab5be5bdff057fa56ff03cf9355",
+      "bytes": 1191
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/config/rviz/rmp60_measurement_markers.rviz",
+      "sha256": "6d3616b4b7752dc3ad22733fbfe8286b54a4e593e200539b5989fc183f5f8be5",
+      "bytes": 1588
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/config/sphere_motion_policy.json",
+      "sha256": "9bf3e23d99e27e1b4363cad87a9870652ab1345a718db661d120a56b49113566",
+      "bytes": 463
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/cpp/sphere_collision_distance.cpp",
+      "sha256": "a586eda91c3f78834efb18694655f434a39db07ede787136289e1ffc5928f899",
+      "bytes": 2746
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/dependencies/apt-runtime.txt",
+      "sha256": "9953668faee344cedb2498a976191f4b1182246c1072585d3bc89e23280e9f78",
+      "bytes": 747
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/desktop/cr5-five-branch-workbench.svg",
+      "sha256": "c7a5d3f415a3d76d5025c2dfe194396c8498455c0ffd5e2cd76a760809a4c3cf",
+      "bytes": 1063
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/docs/CONSOLE_GUIDE.md",
+      "sha256": "3cf6d092dba3bb17b1b139375950296253e1ab47930ecc668c48bf5dd17a075a",
+      "bytes": 3273
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/docs/INSTALLATION.md",
+      "sha256": "adf092740cd8841c3f4ec7ac790ba375dcad6477fa9319709be273550e5634c5",
+      "bytes": 2497
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/launch/README.md",
+      "sha256": "61f1d54f1c3aad0724bcbce391016876b3c289b3ed307aec64b2e9ee74e2a36b",
+      "bytes": 305
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/launch/cr5_rmp60_moveit_demo.launch.py",
+      "sha256": "01fa220253f3eb0e3f34b9e907f9ff9ef8f7e54e6f50e1a4763d58253af1b4da",
+      "bytes": 7593
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/launch/view_cr5_rmp60_model.launch.py",
+      "sha256": "6256330f5cd9dccf4883904a68169f641e490d122a3e8aa332e361fc8ac84685",
+      "bytes": 2869
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/apply_calibration_moveit_scene.py",
+      "sha256": "be5455a8d7efcaf390a97772086dd673df0cbd28f3cede6825122a7233f7dca7",
+      "bytes": 12348
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/audit_sphere_auto_readiness.py",
+      "sha256": "1f8187971a950a7528040895b990b1bf15aaea66412aa508be189691ed742298",
+      "bytes": 3336
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/auto_calibrate_five_branch_sphere.py",
+      "sha256": "01f9807ca239d00e6fb111be491313f3b8b1e13f5b8e221387ee69c83653eee4",
+      "bytes": 118463
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/automatic_sphere_planner.py",
+      "sha256": "1b084d746f9af5de900c492520e8d27751552bc827fe413c67dabc429e7320d7",
+      "bytes": 9929
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/build_batch_entry_preflight.py",
+      "sha256": "74ebad93c78a0af07aa69ed142d17c776ad46e2c66580d09e99eb57174f75e3c",
+      "bytes": 4510
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/calibrate_branch_sphere_absolute.py",
+      "sha256": "a075906db4e6877c559db40391b88e5f4c3ce7f630754604cedd2d8cb22c18f6",
+      "bytes": 10586
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/calibration_registry.py",
+      "sha256": "2aaa5f53918d0d4c3cfe83002b3f5acb2396b8ae319da7a9fa0cf639c1d9b433",
+      "bytes": 18341
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/check_five_branch_plan_moveit.py",
+      "sha256": "a2250c0f3ddf4cd426c4dc55b5ec49631684194a1353704ee16bca3d8c41f8a0",
+      "bytes": 32974
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/check_runtime_environment.py",
+      "sha256": "2b4bf9a9d52268db18d396dd4e006cdc46107144fa6abf7458154670f9a25579",
+      "bytes": 3099
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/contact_record_store.py",
+      "sha256": "ae6c764ee7004d269b038c8e835a994549b6619ba75d980dd24bcb21dcbc6a51",
+      "bytes": 5266
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/cross_probe_model.py",
+      "sha256": "eb2e92fad7ae0b892aee8844e352504227b9683d04b75069e747384195f49288",
+      "bytes": 27887
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/direct_tcp_execute_five_branch_plan.py",
+      "sha256": "c1051dc2c3d4993f609e5766ea8792e4ddc121ea4c8f99d352771d501c2bd7cf",
+      "bytes": 32828
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/five_branch_sphere_csv_workbench.py",
+      "sha256": "aae1ce32f7b4b7e91c8e979e9301d120c28d0ded66628e78b079c79a8e5959f0",
+      "bytes": 3485
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/five_branch_sphere_workbench.py",
+      "sha256": "5c507e330de0f5454dff3a9bab7ab2bc80792e3a14f7ebe0155c8ac67a37ed16",
+      "bytes": 78666
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/geometry_utils.py",
+      "sha256": "2c2cc6d6dcbb0545912eb3ab99b2671783da3588573f58d830245a2adb001623",
+      "bytes": 2334
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/held_jog.py",
+      "sha256": "e46882dddca9473d36c718618045433032fabeba06db053946c922dd6890018c",
+      "bytes": 1041
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/import_sphere_gui_contacts.py",
+      "sha256": "7b4182295a9ddcd8fd9e89abdbe6acc1cd63f6aa28f88002ed4d8e0446b9bd68",
+      "bytes": 7906
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/install_desktop_entry.py",
+      "sha256": "502508d8f83774319d39fb09a4be1e4e4aa4446f25707333b23076ce9f978a9b",
+      "bytes": 1099
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/install_runtime.sh",
+      "sha256": "b4bfb8bdce36663477ada68c3a3239a68ec5e2fc50611ea60a7f95c762c0a9e1",
+      "bytes": 1351
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/jog_and_record_contacts.py",
+      "sha256": "25dbabd7854e8dd26505bef82654b39622b2e560eb22e8fee8570e381eec5b24",
+      "bytes": 35398
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/launch_five_branch_sphere_workbench.sh",
+      "sha256": "b659402c86cb7f5f8538e47981f73cd9ffeb3f16787973212ece7429a5bbebb2",
+      "bytes": 816
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/launch_sphere_csv_workbench.sh",
+      "sha256": "b2ff787a67a0ed3ec65661bf217dc1778d99e4c83577bbde357d3eb8eb7d83bb",
+      "bytes": 477
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/model_based_sphere_point_planner.py",
+      "sha256": "b62456ff54f224745c3c6e2980df62b04c6ecdb393641952abda235cf0d264eb",
+      "bytes": 38686
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/moveit_sphere_contact_safety.py",
+      "sha256": "4fb427ea127c53f982e262743132a69b85a0329e3426e22df3da93e02455e160",
+      "bytes": 22197
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/native_collision.py",
+      "sha256": "8705278e0f4e45670796616f244476793ec558809e66f670e142f2e69d129cd6",
+      "bytes": 4749
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/plan_compensation_dataset.py",
+      "sha256": "78642ca1a9d7448a8ef53e6337197cc0ca64bf1950cc7c366dfbf0bffbf1a518",
+      "bytes": 48918
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/probe_calibration_gui.py",
+      "sha256": "499a9dd76c678f0f5e9c946cf42729864f0b6c5e7c7c3a13a663d10f515834f0",
+      "bytes": 84976
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/probe_touch.py",
+      "sha256": "03d8ff6256439e72ddc5b049a1ff61d7bd37f5e5c7a4d977514bd6f73e72e27f",
+      "bytes": 42257
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/publish_five_branch_plan_markers.py",
+      "sha256": "b25e75a29fd8be0340ef73a3526d456d23fa27e69af0ee4ee8310db7b92a3e97",
+      "bytes": 3260
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/publish_workcell_scene_markers.py",
+      "sha256": "a01960f94f8d8913c3809b8490b0a7e671168e173360d3f4e164190985f38c36",
+      "bytes": 6414
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/read_current_sphere_frame_pair.py",
+      "sha256": "abc2e0b6f1f58dfc153f20fc36b0b7287ccc2ae879504867c570406ccf88273f",
+      "bytes": 4902
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/ros_wait_utils.py",
+      "sha256": "ed19009bb62ddebe0207d0b384e9ac1f81b94f61af7b33769ae50b67127047ac",
+      "bytes": 602
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/sanitize_moveit_overlay.sh",
+      "sha256": "9665cfb10d69c11c3353fc26c888c5e73175da1cf19ec8e499e191b74f4fdf0c",
+      "bytes": 1243
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/semi_auto_normal_probe.py",
+      "sha256": "24da4f0ed70bc4109a4b66cd37e8f80f4193b4adeb7381921228d8966edeb027",
+      "bytes": 30019
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/source_runtime.sh",
+      "sha256": "de8812fa13534f646c148e3eb117fad0ae986cc11675d3540b890a0dd39fe6fc",
+      "bytes": 757
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/sphere_contact_safety.py",
+      "sha256": "ef844797820a7f9552d8fd822d6bdb1665a1aed6dc41dd3f52296f42a5f00343",
+      "bytes": 17884
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/sphere_experiment_core.py",
+      "sha256": "2db9c72c6241db3225275b6d2955fcfb66589a6040d5c89e7d92b37669ae2d00",
+      "bytes": 35547
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/sphere_experiment_runner.py",
+      "sha256": "9c67d12c06d7ff3bf42cd2905332384dbcf78f02f5898e912ba17ba933a15734",
+      "bytes": 21112
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/sphere_motion_contract.py",
+      "sha256": "c8acb195adb237aee3836f4db762d7da0f2ccaf5898ca974bf2eed94c7d2eb1c",
+      "bytes": 4506
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/sphere_offset_fit.py",
+      "sha256": "e75b7347232947daa20b5b8b36276c069c9fead51da819f0a9b224993f9d4669",
+      "bytes": 7766
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/sphere_simulation.py",
+      "sha256": "bb7ab434ea78a312974203fcf3526c6060acb777bb4d9c0dcfb6cf89ea27aa09",
+      "bytes": 20805
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/sphere_simulation_dialog.py",
+      "sha256": "e4f1055978984fee864ba2f6e96edcabaa79270e1b6c5b0a13e9747c29c58e2f",
+      "bytes": 19805
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/start_dobot_driver.sh",
+      "sha256": "353481b5dae5bebaa8cf9b343f56fc35b2a5a70425e6f05f313ab0f64575841c",
+      "bytes": 241
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/verified_sphere_executor.py",
+      "sha256": "c5d1cd5762776c46ea279c3974ed5260a00494ba6334577fa01edb84dd6386e3",
+      "bytes": 13786
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/whole_robot_collision.py",
+      "sha256": "a53876afd1210cb95297f34d5f29f296daa6b88421582f1f00aaf14c7501da2b",
+      "bytes": 18753
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/scripts/workbench_profile.py",
+      "sha256": "d85a71af181b4fb258f75db5c73bf091c9e3e7ab026f485e4bfdcc1001a3f630",
+      "bytes": 12707
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/tests/test_contact_record_store.py",
+      "sha256": "53e8b4eb7fcc74223ca2d5d3f8d2d90c900a763386b05c881fc6c1deae82d065",
+      "bytes": 13931
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/tests/test_held_jog.py",
+      "sha256": "3df23a7ae7ee2464be4d26d02da8fba748be8f9ffd485fa95b9e411fc4939b52",
+      "bytes": 11417
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/tests/test_import_sphere_gui_contacts.py",
+      "sha256": "10b3a4e8ba0deb4fcde845e5ded1e832ff023ec596aa01ad289d076c6f372427",
+      "bytes": 3884
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/tests/test_safe_exit_logic.py",
+      "sha256": "f8a19d49c059f56e1dd050e45a6372d1dff015acb4c9d0fc4d4b1d948c99d5a2",
+      "bytes": 1373
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/tests/test_sphere_contact_safety.py",
+      "sha256": "65270e36462d973689c2d82a088a63207a0a6b94403321bcee4f30726fc02bd6",
+      "bytes": 10209
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/tests/test_sphere_experiment_workbench.py",
+      "sha256": "50b2b6ac6fb08ed7f511ffe2b99bd97e54c51b5a08c2dae2e7c2c20011b11198",
+      "bytes": 28623
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/tests/test_sphere_offset_fit.py",
+      "sha256": "5090ed8a0cb9ca095d8aa9fb19e1bcb16c312cf253c99392cd79663f6c005ccc",
+      "bytes": 3979
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/tests/test_whole_robot_automatic_collection.py",
+      "sha256": "a2f2c866776ea1d9ee33b20910b97242145638cb197c35feab56af7f8247ca2d",
+      "bytes": 13395
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/urdf/README.md",
+      "sha256": "221f6fd2d30d7c9e658c278ccd427b922a727c7e2bdd14bec745a414b1316438",
+      "bytes": 378
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/urdf/cr5_moveit_with_rmp60.urdf.xacro",
+      "sha256": "b08b031f35c3389a091ab3192e2d1070bd9c07e7492f66935d6da0e8dd2db5ad",
+      "bytes": 2654
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/urdf/cr5_with_rmp60.urdf.xacro",
+      "sha256": "d227b24feb27e1568be25bea9df56615ac83f317cb3d8c1333c9f5a015686272",
+      "bytes": 1592
+    },
+    {
+      "path": "src/cr5_rmp60_measurement/urdf/rmp60_probe_module.xacro",
+      "sha256": "e9b70e2f9a8bad6647d2a5eb5f92f4beb74436750d025603e560845f393d59ce",
+      "bytes": 10361
+    }
+  ]
+}
